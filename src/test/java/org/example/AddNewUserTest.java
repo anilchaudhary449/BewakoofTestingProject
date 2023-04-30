@@ -4,8 +4,6 @@ package org.example;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -17,7 +15,7 @@ public class AddNewUserTest{
     AddNewUser newUser;
 
     @Test
-    void setup() throws InterruptedException{
+    void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         //noinspection deprecation

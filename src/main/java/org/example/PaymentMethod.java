@@ -1,6 +1,5 @@
 package org.example;
 
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
 
 import java.util.ResourceBundle;
-import java.util.concurrent.TimeUnit;
 
 public class PaymentMethod {
     WebDriver driver;

@@ -1,6 +1,5 @@
 package org.example;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,8 +10,6 @@ public class ProductPage {
             WebElement accessories;
     @FindBy(xpath = "//a[normalize-space()='Men']")
             WebElement Men;
-
-//By accesories=By.xpath("//a[contains(text(),'Accessories')]");
 
 WebDriver driver;
 

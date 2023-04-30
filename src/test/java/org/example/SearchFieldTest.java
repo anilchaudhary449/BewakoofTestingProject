@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class SearchFieldTest {
     WebDriver driver;
 @Test
-    void setup()throws InterruptedException{
+    void setup(){
         WebDriverManager.chromedriver().setup();
         driver =new ChromeDriver();
 

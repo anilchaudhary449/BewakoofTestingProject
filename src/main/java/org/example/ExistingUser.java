@@ -1,6 +1,5 @@
 package org.example;
 
-import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,18 +32,6 @@ public class ExistingUser {
 
     @FindBy(id ="web_menu_myaccount")
             WebElement Show_Account;
-
-   // By email =By.xpath("//input[@id='email_input']");
-   // By passWrd=By.xpath("//input[@id='mob_password']");
-
-   // By submit=By.cssSelector("#mob_login_password_submit");
-
-   // By body=By.tagName("body");
-
-    //By Icon_Account=By.xpath("//i[@class='icon_user']");
-
-    //By Show_Account=By.id("web_menu_myaccount");
-
 
     void valid_details() throws InterruptedException
     {

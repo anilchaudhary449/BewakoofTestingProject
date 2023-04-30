@@ -9,7 +9,7 @@ public class ProductPageTest {
     WebDriver driver;
 
     @Test
-    void setup() throws InterruptedException {
+    void setup(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
 
