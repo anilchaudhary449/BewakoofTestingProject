@@ -13,14 +13,15 @@ public class PaymentMethodTest {
 
     @Test
     void setup() throws InterruptedException {
+
         WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
-        //noinspection deprecation
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 
         driver.get("https://www.bewakoof.com/login/");
         driver.manage().window().maximize();
-
+        //noinspection deprecation
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         pay=new PaymentMethod(driver);
         pay.PayItem();
     }

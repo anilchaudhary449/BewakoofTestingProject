@@ -6,12 +6,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class PriceSortingTest {
     WebDriver driver;
     PriceSorting priceSorting;
 
     @Test
     void setup() throws InterruptedException {
+
         WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
 
@@ -20,5 +23,7 @@ public class PriceSortingTest {
 
         priceSorting=new PriceSorting(driver);
         priceSorting.priceSorting();
+        Thread.sleep(5000);
+        driver.quit();
     }
 }
