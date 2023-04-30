@@ -3,7 +3,6 @@ package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
@@ -16,7 +15,7 @@ public class AddNewUserTest{
     AddNewUser newUser;
 
     @Test
-    void setup() throws InterruptedException {
+    void setNewUser() throws InterruptedException {
         WebDriverManager.edgedriver().setup();
         driver=new EdgeDriver();
         //noinspection deprecation

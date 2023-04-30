@@ -2,18 +2,16 @@ package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
 
 public class PriceSortingTest {
     WebDriver driver;
     PriceSorting priceSorting;
 
     @Test
-    void setup() throws InterruptedException {
+    void setPriceSorting() throws InterruptedException {
 
         WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();

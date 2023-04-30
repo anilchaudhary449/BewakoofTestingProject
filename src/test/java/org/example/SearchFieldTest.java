@@ -1,7 +1,7 @@
 package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class SearchFieldTest {
     WebDriver driver;
 @Test
-    void setup(){
+    void setSearchField(){
 
         WebDriverManager.edgedriver().setup();
         driver =new EdgeDriver();

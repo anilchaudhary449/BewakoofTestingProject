@@ -12,7 +12,7 @@ public class AddToWishListTest {
     AddToWishList addWish;
 
   @Test
-    void setup() throws InterruptedException {
+    void setAddWish() throws InterruptedException {
         WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
         //noinspection deprecation

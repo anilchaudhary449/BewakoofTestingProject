@@ -12,7 +12,7 @@ public class PaymentMethodTest {
     PaymentMethod pay;
 
     @Test
-    void setup() throws InterruptedException {
+    void setPayment() throws InterruptedException {
 
         WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
