@@ -23,6 +23,8 @@ public class AddToWishListTest {
 
         addWish=new AddToWishList(driver);
         addWish.addToFavourite();
+        Thread.sleep(5000);
+        driver.quit();
     }
 
 }

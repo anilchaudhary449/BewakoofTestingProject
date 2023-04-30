@@ -24,5 +24,7 @@ public class PaymentMethodTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         pay=new PaymentMethod(driver);
         pay.PayItem();
+        Thread.sleep(5000);
+        driver.quit();
     }
 }

@@ -26,5 +26,8 @@ public class AddNewUserTest{
         newUser=new AddNewUser(driver);
 
         newUser.validate_NewUser();
+
+        Thread.sleep(5000);
+        driver.quit();
     }
 }

@@ -24,5 +24,7 @@ public class ExistingUserTest {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         ExistingUser existingUser=new ExistingUser(driver);
         existingUser.valid_details();
+        Thread.sleep(5000);
+        driver.quit();
     }
 }
