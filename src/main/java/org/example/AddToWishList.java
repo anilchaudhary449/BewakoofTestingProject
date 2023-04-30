@@ -33,7 +33,7 @@ public class AddToWishList {
     @FindBy(xpath ="//input[@placeholder='Search by product, category or collection']" )
             WebElement searchField;
 
-    @FindBy(xpath = "//*[@id=\"testProductcard_2\"]/a/div")
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[3]/div[2]/div[1]/div[2]/div[2]/div[2]/a[1]/div[1]/div[1]/div[1]/img[1]")
             WebElement shirtSelect;
 
     @FindBy(xpath = "//span[normalize-space()='WISHLIST']")
