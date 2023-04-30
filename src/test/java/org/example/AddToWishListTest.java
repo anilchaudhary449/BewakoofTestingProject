@@ -3,6 +3,7 @@ package org.example;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -13,8 +14,8 @@ public class AddToWishListTest {
 
   @Test
     void setup() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriverManager.edgedriver().setup();
+        driver = new EdgeDriver();
         //noinspection deprecation
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 

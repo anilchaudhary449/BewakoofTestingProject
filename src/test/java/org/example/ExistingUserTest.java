@@ -3,6 +3,7 @@ package org.example;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -12,8 +13,8 @@ public class ExistingUserTest {
     @Test
     //@Parameters({"browser","url"})
     void setup() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriverManager.edgedriver().setup();
+        driver = new EdgeDriver();
 
         driver.get("https://www.bewakoof.com/login/email");
         driver.manage().window().maximize();
