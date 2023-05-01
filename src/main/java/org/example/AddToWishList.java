@@ -36,7 +36,7 @@ public class AddToWishList {
     @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[3]/div[2]/div[1]/div[2]/div[2]/div[2]/a[1]/div[1]/div[1]/div[1]/img[1]")
             WebElement shirtSelect;
 
-    @FindBy(xpath = "//span[normalize-space()='WISHLIST']")
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/div[8]/div[1]/div[1]")
     WebElement clkWish;
 
     @FindBy(xpath = "//i[@class='icon_user']")

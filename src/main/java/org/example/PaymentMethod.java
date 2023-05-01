@@ -81,8 +81,8 @@ public class PaymentMethod {
         Thread.sleep(3000);
         PayBtn.click();
 
-        Thread.sleep(3000);
-        WithCash.click();
+//        Thread.sleep(3000);
+//        WithCash.click();
 
 //        Thread.sleep(2000);
 //        WebElement pay = ClickPay;

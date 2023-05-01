@@ -47,9 +47,9 @@ public class ExistingUser {
         WebElement element = (submit);
         action.doubleClick(element).perform();
 
-        WebElement element2 = (body);
-        Actions builder = new Actions(driver);
-        builder.moveToElement(element2, 0, 0).perform();
+//        WebElement element2 = (body);
+//        Actions builder = new Actions(driver);
+//        builder.moveToElement(element2, 0, 0).perform();
 
         Thread.sleep(3000);
         WebElement icon=(Icon_Account);
